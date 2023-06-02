@@ -68,7 +68,7 @@ function onSubmit(event) {
     if (!hasErrors) {
         document.querySelector('.loading').style.display = 'flex';
 
-        setTimeout(() => window.location.href = '/acknowledge.html', 2000);
+        setTimeout(() => window.location.href = 'acknowledge.html', 2000);
     };
 };
 
