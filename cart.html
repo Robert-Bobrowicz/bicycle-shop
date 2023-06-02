@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cart</h1>
+        <table class="card-table">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Item</th>
+                    <th>Qauntity</th>
+                    <th>Price</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" style="text-align: right;"><b>Total:</b></td>
+                    <td><b id="total-price">0</b></td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div>
+            <input type="checkbox" id="add-discount">
+            <label for="add-discount">Add discount</label>
+            <p class="discount hidden" id="discount" data-discount-should-be-enabled="1">Discount: <b
+                    id="discount-amount">0</b>
+            </p>
+        </div>
+
+        <a href="order.html" class="btn btn-order" id="go-to-summary">Summary</a>
+    </div>
+
+
+    <!-- <script>window.discountShouldBeEnabled = 0</script> //Better: dataset -->
+    <script src="./src/js/cart.js"></script>
+</body>
+
+</html>

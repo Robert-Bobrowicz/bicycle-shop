@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Finalize order</title>
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul class="navigation-list">
+            <li class="navigation-item">
+                <a href="index.html">Shop</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="loading">Sending to a server...</div>
+
+    <form class="container">
+        <h1>Finalize order</h1>
+
+        <div class="summary">
+            <div class="card">
+                <h3>Your data</h3>
+                <div class="form-item">
+                    <label for="name">Name and surname</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div class="form-item">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="form-item">
+                    <label for="email-confirm">Confirm email</label>
+                    <input type="email" name="email-confirm" id="email-confirm">
+                </div>
+
+                <div class="form-item">
+                    <label for="tel">Phone</label>
+                    <input type="tel" name="tel" id="tel">
+                </div>
+
+                <h3>Payment method</h3>
+                <div class="form-item payment">
+                    <label for="online">Online</label>
+                    <input type="radio" id="online" name="payment" value="online">
+                    <br>
+                    <label for="blik">Blik</label>
+                    <input type="radio" id="blik" name="payment" value="blik" checked>
+                </div>
+                <ul id="errors"></ul>
+            </div>
+
+            <div class="card">
+                <h3>Summary</h3>
+                <ul id="items-list">
+                    <li>Bicycle 1</li>
+                </ul>
+                <hr />
+                <p><b>Price: <span id="price-container"></span>USD</b></p>
+                <p><b>Order date: </b><span id="dateContainer"></span></p>
+            </div>
+        </div>
+
+        <button type="submit" href="#" class="btn btn-order" id="buy">Buy</button>
+        <a href="cart.html" class="btn btn-order">Return</a>
+    </form>
+
+
+    <script src="./src/js/order.js"></script>
+</body>
+
+</html>
