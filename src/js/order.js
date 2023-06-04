@@ -67,8 +67,9 @@ function onSubmit(event) {
     //show loading up to a server icon
     if (!hasErrors) {
         document.querySelector('.loading').style.display = 'flex';
-        localStorage.removeItem('items');
-        localStorage.removeItem('totalPrice');
+        // localStorage.removeItem('items');
+        // localStorage.removeItem('totalPrice');
+        localStorage.clear();
         setTimeout(() => window.location.href = 'acknowledge.html', 2000);
     };
 };
